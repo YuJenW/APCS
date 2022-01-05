@@ -1,7 +1,7 @@
 # Easy problem
 
 # Finshed 
-a001
-a002\n
-a003\n
-a004
+a001 
+a002 
+a003 
+a004 
