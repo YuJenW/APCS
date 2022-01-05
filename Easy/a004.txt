@@ -1,0 +1,88 @@
+Python 
+-----------------------------------------------------------------------------
+#19 ms
+import sys  
+for user_in in sys.stdin: 
+    if int(user_in) %4 != 0: 
+        print("平年")
+    elif int(user_in) %100 != 0:
+        print("閏年")
+    elif int(user_in) %400 != 0:
+        print("平年")
+    else:
+        print("閏年")
+
+Or
+#34 ms
+try:
+    while True:
+        user_in = input()
+        if int(user_in) %4 != 0:
+            print("平年")
+        elif int(user_in) %100 != 0:
+            print("閏年")
+        elif int(user_in) %400 != 0:
+            print("平年")
+        else:
+            print("閏年")
+except EOFError:
+    pass 
+
+-----------------------------------------------------------------------------
+
+C
+-----------------------------------------------------------------------------
+#include <stdio.h>
+
+int main(){
+	int user_in;
+	while(scanf("%d",&user_in) != EOF){ 
+
+  	      if (user_in % 4 != 0){ 
+   	         printf("平年\n");
+  	      }
+  	      else if (user_in % 100 != 0){
+  	          printf("閏年\n");
+  	      }
+  	      else if (user_in % 400 != 0){
+        	    printf("平年\n");
+  	      }
+  	      else{
+	            printf("閏年\n");
+  	      }
+	}
+	return 0;
+}
+
+-----------------------------------------------------------------------------
+
+C++
+-----------------------------------------------------------------------------
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int user_in;
+	cin>>user_in;
+	while(cin){ 
+  	      if (user_in % 4 != 0){ 
+   	         cout<<"平年\n";
+  	      }
+  	      else if (user_in % 100 != 0){
+  	          cout<<"閏年\n";
+  	      }
+  	      else if (user_in % 400 != 0){
+        	    cout<<"平年\n";
+  	      }
+  	      else{
+	            cout<<"閏年\n";
+  	      }
+  	      cin>>user_in;
+
+	}
+	return 0;
+}
+
+-----------------------------------------------------------------------------
