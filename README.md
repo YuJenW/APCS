@@ -1,2 +1,2 @@
-# APCS
-This repository is about the solution of APCS.
+# Zerojudge
+This repository is about the solution of Zerojudge.
