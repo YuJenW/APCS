@@ -1,0 +1,14 @@
+Python
+-----------------------------------------------------------------------------
+user_in_1 = input()
+sign = user_in_1.split(" ")[1] 
+if sign == '+':
+    print(eval(user_in_1.split(" ")[0]) + eval(user_in_1.split(" ")[2]) )
+elif sign == '-':
+    print(eval(user_in_1.split(" ")[0]) - eval(user_in_1.split(" ")[2]) )
+elif sign == '*':
+    print(eval(user_in_1.split(" ")[0]) * eval(user_in_1.split(" ")[2]) )
+elif sign == '/':
+    print(eval(user_in_1.split(" ")[0]) // eval(user_in_1.split(" ")[2]) )
+    
+-----------------------------------------------------------------------------
